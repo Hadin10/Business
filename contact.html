@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style0.css">
+    <!-- <link rel="stylesheet" href="practice_css.css"> -->
+</head>
+
+<body>
+
+
+
+    <div class="header">
+        <div class="navbar">
+            <nav>
+                <ul id="menu_items">
+                    <li><a href="user_layout.php">Home</a></li>
+                    <li><a href="product.php">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.php">Log out</a></li>
+
+                </ul>
+
+            </nav>
+            <img src="menu.png" width="28px" height="20px" class="menu_icon" onclick="menu_toggle()">
+
+        </div>
+    </div>
+
+
+
+    <div class="body_contact">
+        <div class="contact_us">
+            <h1>
+                Contact Us
+            </h1>
+            <p>
+                We're here to help you. Say what you need to know. we look forward to listen you.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="contact_information">
+                <i class="fa fa-map-marker"></i>
+                <h2>Address </h2>
+                <p>moaradnogor, comilla, Bangladesh</p>
+
+                <i class="fa fa-phone"></i>
+                <h2>Phone </h2>
+                <p>01700000000</p>
+
+
+                <i class="fa fa-envelope-o"></i>
+                <h2>Email</h2>
+                <p>abc@gmail.com</p>
+
+            </div>
+
+            <div class="form">
+                <form method="POST" action="https://formsubmit.co/79504d7126083ef89819b696b0c9bf46"
+                    enctype="multipart/form-data">
+                    <input type="hidden" name="_next" value="http://localhost/business/user_layout.php">
+                    <h2>Send Message</h2>
+                    <div>
+                        <input type="text" name="name" id="name" required>
+                        <span>Enter your name</span>
+                    </div>
+
+                    <div>
+                        <input type="text" name="email" id="email" id="email" required>
+                        <span>Enter email address</span>
+                    </div>
+
+                    <div>
+                        <textarea name="message" id="message" required></textarea>
+                        <span>Type your message</span>
+                    </div>
+
+
+                    <input type="submit">
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var menu_icon = document.getElementById("menu_items");
+        menu_icon.style.maxHeight = "0px";
+
+        function menu_toggle() {
+            if (menu_icon.style.maxHeight == "0px") {
+                menu_icon.style.maxHeight = "200px";
+            } else {
+                menu_icon.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
